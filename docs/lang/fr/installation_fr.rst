@@ -14,3 +14,15 @@ Cela présente l'avantage supplémentaire que plus tard, vous pourrez mettre à 
     pipx install tox
     tox --help
 
+via pip 
+------- 
+
+Alternativement, vous pouvez l'installer dans l'interpréteur Python global lui-même (peut-être en tant que paquet utilisateur via le fichier ''--user''). 
+Soyez prudent si vous utilisez une installation Python gérée par votre système d'exploitation ou un autre gestionnaire de paquets. 
+''pip'' peut ne pas se coordonner avec ces outils, et peut laisser votre système dans une situation incohérente. état. 
+Notez que si vous empruntez cette voie, vous devez vous assurer que pip est suffisamment récent conformément aux sous-sections ci-dessous :
+
+.. code-block:: bash
+
+    python -m pip install --user tox
+    python -m tox --help
